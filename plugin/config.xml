@@ -1,0 +1,38 @@
+<plugin>
+    <name>GoogleTranslationWidget</name>
+    <package>GoogleTranslationWidget</package>
+    <version>1.0</version>
+    <providerURL>http://googletranslate.riaforge.org/</providerURL>
+    <category>Google Widgets</category>
+    <settings>
+        <setting>
+            <name>transFrom</name>
+            <label>Default Translate from:</label>
+            <hint>The default language to translate from</hint>
+            <type>select</type>
+            <required>true</required>
+            <validation></validation>
+            <regex></regex>
+            <message></message>
+            <defaultvalue>en</defaultvalue>
+            <optionlist>af^sq^ar^be^bg^ca^zh-CN^hr^cs^da^nl^en^et^tl^fi^fr^gl^de^el^iw^hi^hu^is^id^ga^it^ja^ko^lv^lt^mk^ms^mt^no^fa^pl^pt^ro^ru^sr^sk^sl^es^sw^sv^th^tr^uk^vi^cy^yi</optionlist>
+            <optionlabellist>Afrikaans^Albanian^Arabic^Belarusian^Bulgarian^Catalan^Chinese (Simplified)^Croatian^Czech^Danish^Dutch^English^Estonian^Filipino^Finnish^French^Galician^German^Greek^Hebrew^Hindi^Hungarian^Icelandic^Indonesian^Irish^Italian^Japanese^Korean^Latvian^Lithuanian^Macedonian^Malay^Maltese^Norwegian^Persian^Polish^Portuguese^Romanian^Russian^Serbian^Slovak^Slovenian^Spanish^Swahili^Swedish^Thai^Turkish^Ukrainian^Vietnamese^Welsh^Yiddish</optionlabellist>
+        </setting>
+        <setting>
+            <name>transTo</name>
+            <label>Default Translate To:</label>
+            <hint>The default language to translate into</hint>
+            <type>select</type>
+            <required>true</required>
+            <validation></validation>
+            <regex></regex>
+            <message></message>
+            <defaultvalue>es</defaultvalue>
+            <optionlist>af^sq^ar^be^bg^ca^zh-CN^hr^cs^da^nl^en^et^tl^fi^fr^gl^de^el^iw^hi^hu^is^id^ga^it^ja^ko^lv^lt^mk^ms^mt^no^fa^pl^pt^ro^ru^sr^sk^sl^es^sw^sv^th^tr^uk^vi^cy^yi</optionlist>
+            <optionlabellist>Afrikaans^Albanian^Arabic^Belarusian^Bulgarian^Catalan^Chinese (Simplified)^Croatian^Czech^Danish^Dutch^English^Estonian^Filipino^Finnish^French^Galician^German^Greek^Hebrew^Hindi^Hungarian^Icelandic^Indonesian^Irish^Italian^Japanese^Korean^Latvian^Lithuanian^Macedonian^Malay^Maltese^Norwegian^Persian^Polish^Portuguese^Romanian^Russian^Serbian^Slovak^Slovenian^Spanish^Swahili^Swedish^Thai^Turkish^Ukrainian^Vietnamese^Welsh^Yiddish</optionlabellist>
+        </setting>
+    </settings>
+    <displayobjects location="global">
+	<displayobject name="Google Translation Widget" displaymethod="translation_widget" displayobjectfile="displayObjects/translation_widget.cfm"/>
+    </displayobjects>
+</plugin>
